@@ -1,1 +1,1 @@
-web: python bot.py
+wegit remote add originb: python bot.py
