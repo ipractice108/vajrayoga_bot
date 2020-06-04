@@ -1,1 +1,1 @@
-wegit remote add originb: python bot.py
+web: gunicorn run_server:server
