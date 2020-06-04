@@ -4,8 +4,6 @@ import constants
 from bot import bot
 from telebot import types
 from flask import Flask, request
-
-from MON_SCHEDULE import run_schedule
 from multiprocessing import Process
 server = Flask(__name__)
 
