@@ -26,3 +26,18 @@ def webhook():
 
 def run_server():
     server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
+
+if __name__ == "__main__":
+    server_process = None
+    try:
+        print("starting server")
+        server_process = Process(target=run_server)
+        server_process.start()
+        print(server_process)
+
+        print("starting schedule")
+        scheduler_process1 = Process(target=run_schedule)
+        scheduler_process1.start()
+        print(scheduler_process1)
+
+        bot.polling(none_stop=True)
