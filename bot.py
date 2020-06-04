@@ -132,4 +132,3 @@ def handle_text(message):
         key.row('ВПЕРЕД!')
         bot.send_message(message.chat.id,'❗️Пожалуйста, помните следовать советам и заниматься по видео урокам необходимо в соответсвии со своими ощущениями, без чрезмерных усилий, желательно в пол силы.❗️', reply_markup=key)
 
-bot.polling(none_stop=True)

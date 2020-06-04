@@ -35,9 +35,9 @@ if __name__ == "__main__":
         server_process.start()
         print(server_process)
 
-        print("starting schedule")
-        scheduler_process1 = Process(target=run_schedule)
-        scheduler_process1.start()
-        print(scheduler_process1)
-
         bot.polling(none_stop=True)
+
+    finally:
+        if server_process:
+            server_process.terminate()
+            server_process.join()
