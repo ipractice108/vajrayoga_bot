@@ -16,7 +16,7 @@ pyTelegramBotAPI==3.6.7
 requests==2.23.0
 six==1.14.0
 typed-ast==1.4.1
-urllib3==1.25.8
+urllib3==1.26.5
 Werkzeug==1.0.0
 wrapt==1.11.2
 schedule==0.6.0
